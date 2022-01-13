@@ -1,6 +1,6 @@
-# advence-css-sass
+# advenced-css-sass
 
-## There Pillars to write good html and css... and build good websites
+## Three Pillars to write good html and css... and build good websites
 
 1. Responsive design
 
