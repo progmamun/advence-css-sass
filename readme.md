@@ -39,3 +39,12 @@
 - The universal selector \* has no specificity value (0, 0, 0, 0).
 - Rely more on **specificity** than on the order of selectors.
 - But, rely on order when using 3rd-party stylesheets -always put your author stylesheet last.
+
+# Inheritance in css
+
+- Inheritance passes the values for some specific properties from parents to children -- **more maintainable code;**
+- Properties related to text are inherited: font-family, font-size, color, etc;
+- The computed value of a property is what gets inherited, not the declared value.
+- Inheritance of a property only works if no one declares a value for that property;
+- The _inherit_ keyword forces inheritance on a certain property;
+- The _initial_ keyword resets a property to its initial value.
