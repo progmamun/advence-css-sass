@@ -69,3 +69,8 @@
 1. package.json
 
 - npm init
+- npm install node-sass --save-dev
+- npm install jquery
+- npm uninstall jquery --save
+
+2. npm run compile:sass
