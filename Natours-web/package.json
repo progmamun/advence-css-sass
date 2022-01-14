@@ -1,0 +1,19 @@
+{
+  "name": "natours-web",
+  "version": "1.0.0",
+  "description": "advanced-css-apply",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progmamun/advence-css-sass.git"
+  },
+  "author": "Al Mamun Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progmamun/advence-css-sass/issues"
+  },
+  "homepage": "https://github.com/progmamun/advence-css-sass#readme"
+}
