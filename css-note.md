@@ -5,6 +5,7 @@
 - background-clip into text.
 
 ```
+display: inline-block;
 background-image: linear-gradient(
    to right,
    $color-primary-light,
