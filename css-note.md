@@ -33,3 +33,4 @@ background-image: linear-gradient(
  // composition:hover composition__photo:not(:hover){}
  }
  ```
+ - direct childs selector | .section-features > * |all child has been selected
