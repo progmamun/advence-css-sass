@@ -23,4 +23,9 @@ background-image: linear-gradient(
  &:hover {
  outline: 1.5rem solid $color-primary;
  } 
+ 
+ &:hover &__photo:not(:hover) {
+ 	transform: scale(.95);
+ // composition:hover composition__photo:not(:hover){}
+ }
  ```
