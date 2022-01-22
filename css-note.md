@@ -14,3 +14,5 @@ background-image: linear-gradient(
  -webkit-background-clip: text;
  color: transparent;
 ```
+
+`&:not(:last-child) { margin-bottom: 3rem; }` | pseudo class
