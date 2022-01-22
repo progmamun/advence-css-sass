@@ -16,3 +16,4 @@ background-image: linear-gradient(
 ```
 
 `&:not(:last-child) { margin-bottom: 3rem; }` | pseudo class
+ - [CSS Glyphs UNICODE code snippets](https://css-tricks.com/snippets/html/glyphs/) | css unicode html
