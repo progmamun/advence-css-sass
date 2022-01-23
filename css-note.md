@@ -34,3 +34,19 @@ background-image: linear-gradient(
  }
  ```
  - direct childs selector | .section-features > * |all child has been selected
+ - perspective | 1500px much value good work to perspective
+  .card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+   &__side {
+   
+   height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+   }
