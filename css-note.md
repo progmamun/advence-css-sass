@@ -50,3 +50,4 @@ background-image: linear-gradient(
     width: 100%;
     backface-visibility: hidden;
    }
+   - background-blend-mode: screen; | work as img
