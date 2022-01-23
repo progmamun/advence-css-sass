@@ -50,5 +50,7 @@ background-image: linear-gradient(
     width: 100%;
     backface-visibility: hidden;
    }
-   - background-blend-mode: screen; | work as img
-   - box-decoration-break: clone; | one element two boxes, both styled like margin, padding| add prefix top of this value|
+ - background-blend-mode: screen; | work as img
+ - box-decoration-break: clone; | one element two boxes, both styled like margin, padding| add prefix top of this value|
+-float| work only height and width if value set| 
+- shape-outside: circle(50% at 50% 50%);  
