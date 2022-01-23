@@ -51,4 +51,4 @@ background-image: linear-gradient(
     backface-visibility: hidden;
    }
    - background-blend-mode: screen; | work as img
-   - box-decoration-break: clone; | add prefix top of this value
+   - box-decoration-break: clone; | one element two boxes, both styled like margin, padding| add prefix top of this value|
