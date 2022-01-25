@@ -16,6 +16,7 @@
 900 - 1200px : Table landscape
 1200 - 18000px: is where our normal style apply
 1800px +: Big desktop
+## ORDER: Base + typography > general layout > grid > page layout > components
 ```
 // 1em = 16px; em work every browser but rem not
 
