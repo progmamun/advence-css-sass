@@ -89,3 +89,14 @@ html {
         />
  </picture>
 ```
+- css responsive background imgage
+```
+ @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.8),
+        rgba($color-tertiary-dark, 0.8)
+      ),
+      url(/dist/img/hero.jpg);
+  }
+```
