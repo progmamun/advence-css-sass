@@ -22,26 +22,27 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       @content; // 600px
     }
   }
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       @content; // 900px
     }
   }
   @if $breakpoint == tab-land {
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       @content; // 1200px
     }
   }
   @if $breakpoint == big-desktop {
-    @media (max-width: 112.5em) {
+    @media only screen and (min-width: 112.5em) {
       @content; // 1800px
     }
   }
 }
+
 ```
 ---
 ```
@@ -91,8 +92,9 @@ html {
 ```
 - css responsive background imgage
 ```
- @media (min-resolution: 192dpi) and (min-width: 37.5em),
- (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
+@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
     background-image: linear-gradient(
         to right bottom,
         rgba($color-tertiary-light, 0.8),

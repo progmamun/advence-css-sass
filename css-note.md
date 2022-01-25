@@ -67,3 +67,12 @@ background-image: linear-gradient(
 	background-color: rgba($color-black, .3);
 }
 ```
+
+- 
+```
+::selection {
+	background-color: $color-primary;
+	color: $color-white;
+}
+
+```
