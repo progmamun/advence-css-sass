@@ -59,3 +59,11 @@ background-image: linear-gradient(
 - blockquote::before | [open-quote close-quote](https://css-tricks.com/almanac/properties/q/quotes/)
 
 - object-fit | The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.
+- backdrop-filter:
+```
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background-color: rgba($color-black, .3);
+}
+```
