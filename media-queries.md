@@ -67,3 +67,15 @@ html {
   }
 }
 ```
+
+# When to use responsive imgage: The 3 use cases
+1. Resolution switching | Decrease image resolution on smaller screen
+2. Density Switching |@2x screen(high-res) @1x screen(low-res) |Half the image resolution on @1x screen
+3. Art Direction | Different image on smaller screen
+
+```
+<picture class="header__logo">
+          <source srcset="dist/img/logo-green-small-1x.png 1x, dist/img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+          <img srcset="dist/img/logo-green-1x.png 1x, dist/img/logo-green-2x.png 2x" alt="full logo">
+        </picture>
+```
