@@ -44,7 +44,7 @@
   }
   &:hover &__caption {
     opacity: 1;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -20%);
   }
   &:hover &__img {
     transform: translateX(-4rem) scale(1);
