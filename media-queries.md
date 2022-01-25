@@ -74,8 +74,18 @@ html {
 3. Art Direction | Different image on smaller screen
 
 ```
-<picture class="header__logo">
-          <source srcset="dist/img/logo-green-small-1x.png 1x, dist/img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-          <img srcset="dist/img/logo-green-1x.png 1x, dist/img/logo-green-2x.png 2x" alt="full logo">
-        </picture>
+ <picture class="footer__logo">
+        <source
+          srcset="
+            dist/img/logo-green-small-1x.png 1x,
+            dist/img/logo-green-small-2x.png 2x
+          "
+          media="(max-width: 37.5em)"
+        />
+        <img
+          srcset="dist/img/logo-green-1x.png 1x, dist/img/logo-green-2x.png 2x"
+          alt="full logo"
+          src="dist/img/logo-green-2x.png"
+        />
+ </picture>
 ```
