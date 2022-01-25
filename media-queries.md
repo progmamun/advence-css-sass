@@ -11,4 +11,8 @@
 | Prioritizes content over aesthetic design, which may be desirable.|Clients are used to see a desktop version of the site ass a prototype; Do your users even use the mobile internet? What's the purpose of your website?|
 ---
 # Selecting our Breakpoints: A Good Approach
-- Phone 0-600px|Portrait tablets 600-900| landscape tablet, desktop 900-1200 
+0 - 600px : Phone
+600 - 900px : Table portrait
+900 - 1200px : Table landscape
+1200 - 18000px: is where our normal style apply
+1800px +: Big desktop
