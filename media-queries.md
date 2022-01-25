@@ -91,7 +91,8 @@ html {
 ```
 - css responsive background imgage
 ```
- @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+ @media (min-resolution: 192dpi) and (min-width: 37.5em),
+ (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     background-image: linear-gradient(
         to right bottom,
         rgba($color-tertiary-light, 0.8),
