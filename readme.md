@@ -72,5 +72,22 @@
 - npm install node-sass --save-dev
 - npm install jquery
 - npm uninstall jquery --save
+- npm install concat --save-dev
+- npm install autoprefixer --save-dev
+- npm install postcss-cli --save-dev
+- npm install npm-run-all --save-dev
+```
+"script": {
+	"watch:sass": "node-sass sass/main.scss css/style.css -w",
+	"devserver": "live-server",
+	"start": "npm-run-all --parallel devserver watch:sass",
+	"compile:sass": "node-sass sass/main.scss css/style.comp.css",
+	"concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+	"prefix:css": "postcss --use autoprefixer -b 'last 10 version' css/style.concat.css -o css/style.prefix.css",
+	"compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+	"build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+}
+```
 
-2. npm run compile:sass
+2. npm run build:css
+- npm run start
