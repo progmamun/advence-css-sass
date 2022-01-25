@@ -16,3 +16,53 @@
 900 - 1200px : Table landscape
 1200 - 18000px: is where our normal style apply
 1800px +: Big desktop
+```
+// 1em = 16px; em work every browser but rem not
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content; // 600px
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content; // 900px
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content; // 1200px
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (max-width: 112.5em) {
+      @content; // 1800px
+    }
+  }
+}
+```
+---
+```
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+  // @include respond(phone) {
+  //   font-size: 50%; //
+  // } not need it because tab-port also do the same job
+  @include respond(tab-land) {
+    // width < 1200px
+    // width < 900
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(tab-port) {
+    // width < 600
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1 rem = 12, 12/16= 75%
+  }
+}
+```
