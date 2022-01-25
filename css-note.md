@@ -19,6 +19,7 @@ background-image: linear-gradient(
 `&:not(:last-child) { margin-bottom: 3rem; }` | pseudo class
  - [CSS Glyphs UNICODE code snippets](https://css-tricks.com/snippets/html/glyphs/) | css unicode html
  ---
+ - [class^='col-'] attribute selector this is select start with col- class
  ```
  outline-offset: 2rem; 
  &:hover {
