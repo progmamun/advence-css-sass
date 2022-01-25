@@ -56,3 +56,5 @@ background-image: linear-gradient(
 - shape-outside: circle(50% at 50% 50%);  
 ---
 - blockquote::before | [open-quote close-quote](https://css-tricks.com/almanac/properties/q/quotes/)
+
+- object-fit | The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.
