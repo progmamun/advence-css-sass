@@ -1,0 +1,13 @@
+- npm init
+- npm install node-sass --save-dev
+- sudo npm install live-server -g
+- live server
+- npm run compile:sass
+- npm install concat --save-dev
+- npm install autoprefixer --save-dev
+- npm install postcss-cli --save-dev
+- npm run prefix:css
+- npm run compress:css
+- npm install npm-run-all --save-dev
+- npm run build:css
+- npm run start
