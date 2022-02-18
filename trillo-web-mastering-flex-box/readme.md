@@ -13,7 +13,7 @@
 2. ITEM
 
 - align-self: auto | stretch | flex-start | flex-end | center | baseline
-- order: 0 | <integer>
-- flex-grow: 0 | <integer>
-- flex-shrink: 1 | <integer>
-- flex-basis: auto | <length>
+- order: 0 | (integer)
+- flex-grow: 0 | (integer)
+- flex-shrink: 1 | (integer)
+- flex-basis: auto |(length)
